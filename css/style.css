@@ -12,18 +12,23 @@ h2, a {
 }
 
 h1 {
-	color: #0D2C40;
+	color: #ffffff;
 	font-weight: 400;
 	font-size: 45px;
 	margin: 0;
+
 }
 
 a {
-	color: #F15B31;
+	color: #ffffff;
 	font-size: 18px;
 	padding: 0 30px;
+	border-bottom: 2px solid transparent;
 
-	
+}
+
+a:hover {
+	border-bottom: 2px solid #ffffff;
 }
 
 h2 {
@@ -59,7 +64,44 @@ main {
 	margin: 35px auto;
 }
 
+footer {
+	text-transform: uppercase;
+	padding: 0 20px;
+	background-color: #0D2C40;
+	color: #ffffff;
+	font-size: 14px;
+	letter-spacing: .08em;
+	font-weight: 500;
+}
+
+.copyright{
+	font-family: raleway, sans-serif;
+	float: left;
+}
+
+.message {
+	font-family: raleway, sans-serif;
+	float: right;
+
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: " ";
+  clear: both;
+  height: 0;
+  font-size: 0;
+}
+
+.name {
+	color: #F15B31;
+	font-weight: 700;
+}
+
+
 img {
 	margin: 40px 8px;
 
 }
+
