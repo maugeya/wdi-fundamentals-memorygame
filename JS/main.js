@@ -44,6 +44,16 @@ var checkForMatch = function () {
 		return flipCard;
 	}
 
+	else if (cardsInPlay.length === 3) {
+		return flipCard;
+	}
+
+	else if (cardsInPlay.length === 4 && cardsInPlay[2] === cardsInPlay[3]) {
+		alert("You found another match, you're a winner!");
+
+	}
+
+
 	else {
 		alert("Sorry, Try again!");
 
@@ -51,17 +61,14 @@ var checkForMatch = function () {
 		
 	}
 
+	//checkForMatch.addEventListener('alertClose', window.location.reload());
+
 };
-
-
-
-
-
-
 
 var flipCard = function () {
 
 	var cardId = this.getAttribute('data-id');
+
 		
 
 	console.log("User flipped " + cards[cardId].rank + cards[cardId].suit + cards[cardId].cardImage);
@@ -84,8 +91,6 @@ var createBoard = function () {
 	for (var i = 0; i < cards.length; i++) {
 
 		
-
-
 		var cardElement = document.createElement('img');
 		cardElement.setAttribute('src', 'images/back.png');
 		cardElement.setAttribute('data-id', i);
